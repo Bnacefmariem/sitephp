@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <link>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+        <title>Liste des livres</title>
+        <link rel="stylesheet" href="header.css" type="text/css"/>
+        
+    </head>
+    <body> 
+        <header>
+             <nav> 
+                <ul style='background-color:#4895ef'>
+                    <li><a href="Listlivre.php" class='navbar-brand'> <img src='images/logo2.png ' style="height:80px;width:80px;margin-button: 50px;" ></a></li>
+                    <li><h4 style="margin-top:14px">Livre Store</h4></li>
+                    <li><a href="ListLivre.php">Accueil</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="logout.php" style="margin-left: 40%">Déconnexion</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <br><br><br><br><br>
+        <form action="Ajouter_Livre.php" method="get"> 
+       
+        <center>
+            <h1>Ajout livre</h1>
+            <table class="table">
+                <tr>
+                    <th>Id</th>
+                    <th><input type="number" name="id" value="" /></th>
+                </tr>
+                <tr>
+                    <th>Titre</th>
+                    <th><input type="text" name="titre" value="" /></th>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <th><input type="text" name="description" value="" /></th>
+                </tr>
+                <tr>
+                    <th>Prix</th>
+                    <th><input type="number" name="prix" value="" /></th>
+                </tr>
+                <tr>
+                    <th>categorie</th>
+                    <th><input type="varchar" name="categorie" value="" /></th>
+                </tr>
+                 <tr>
+                    <th>Image</th>
+                    <th><input type="file" name="image"
+                        accept=" image/jpg"></th>
+                </tr>                  
+            </table>
+            <br>
+            <input type="submit" name="" value="Ajouter" class="btn btn-success">
+            <input type="reset" class="btn btn-danger" value="Annuler"/>
+            </form>
+        </center>
+        <br>
+        <br>
+        <br>
+        <footer class="footer">
+            <div class="container">
+                <div class="social-links">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                  </div>
+                  <p><a href="">Contact</a></p>
+                  <br>
+                <center>
+                    Copyright © Livre Store
+                </center>
+            </div>
+        </footer>
+    </body>
+</html>
